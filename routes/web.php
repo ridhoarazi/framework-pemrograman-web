@@ -61,3 +61,8 @@ Route::middleware(['auth', 'role:kasir'])->group(function () {
     })->name('pos.history');
 });
 });
+
+// Testing Demo Routes (Pertemuan 10)
+Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index'])->name('posts.index');
+Route::post('/posts', [\App\Http\Controllers\PostController::class, 'store'])->middleware('auth')->name('posts.store');
+Route::delete('/posts/{post}', [\App\Http\Controllers\PostController::class, 'destroy'])->middleware('auth')->name('posts.destroy');

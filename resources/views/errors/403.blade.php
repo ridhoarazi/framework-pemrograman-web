@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Akses Ditolak</title>
-    @vite('resources/css/app.css')
+    @if(app()->environment() !== 'testing')
+        @vite('resources/css/app.css')
+    @endif
 </head>
 
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
