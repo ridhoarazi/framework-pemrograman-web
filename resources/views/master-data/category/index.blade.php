@@ -15,7 +15,7 @@
                 @endif
 
                 <a href="{{ route('categories.create') }}"
-                   class="inline-block bg-indigo-600 text-white px-4 py-2 rounded">
+                class="inline-block bg-indigo-600 text-white px-4 py-2 rounded">
                     + Tambah Kategori
                 </a>
 
